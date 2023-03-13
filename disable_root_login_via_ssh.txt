@@ -1,0 +1,13 @@
+SSH into the server
+
+go to the below path
+
+>>cd /etc/ssh/sshd_config
+
+Uncomment the below line
+
+#PermitRootLogin no
+
+Restart the SSH service
+
+>> systemctl restart sshd

@@ -1,0 +1,17 @@
+First ssh into the server
+
+Change user to root
+
+>> sudo su -
+
+Get the number of occurences
+
+>> cat /root/nautilus.xml  |grep Sample | wc -l
+
+Replace the occurences
+
+>> sed -i 's/Sample/Software/g' /root/nautilus.xml
+
+Confirm the Change
+
+>> cat /root/nautilus.xml  |grep Software

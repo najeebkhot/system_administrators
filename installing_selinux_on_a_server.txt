@@ -1,0 +1,18 @@
+First ssh into the server
+
+Change user to root
+
+>> sudo su -
+
+Install SeLinux
+
+>> yum -y install selinux
+
+
+Check the configuration 
+
+>> vi /etc/selinux/config
+
+Check status
+
+>> sestatus
